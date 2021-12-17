@@ -11,8 +11,7 @@
     "core-js": "^3.6.5",
     "gsap": "^3.6.1",
     "normalize.css": "^8.0.1",
-    "vue": "^3.0.0",
-    "vue-gtag": "^2.0.1"
+    "vue": "^3.0.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",

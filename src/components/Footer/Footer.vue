@@ -19,6 +19,6 @@ export default {
 
 <style scoped lang="scss">
 .footer-container {
-  min-height: var(--menu-height);
+  min-height: var(--footer-height);
 }
 </style>
