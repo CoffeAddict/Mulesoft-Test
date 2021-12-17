@@ -1,13 +1,17 @@
 <template>
-  <div class="d-flex container">
+  <div class="d-flex">
+    <Hero/>
   </div>
 </template>
 
 <script>
 
+import Hero from './Hero.vue'
+
 export default {
   name: 'BodyContent',
   components: {
+    Hero
   },
   data () {
     return {

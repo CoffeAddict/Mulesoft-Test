@@ -9,7 +9,7 @@
 
 <script>
 
-import MulesoftBlue from '../Icons/MulesoftBlue.vue'
+import MulesoftBlue from '@/components/Icons/MulesoftBlue.vue'
 
 export default {
   name: 'NavBar',

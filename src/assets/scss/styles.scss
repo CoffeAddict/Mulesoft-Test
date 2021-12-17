@@ -8,6 +8,7 @@
     --magenta: #e50097;
     --light-blue: #00a3e0;
     --light-blue-2: #00a0df;
+    --blue: #00044C;
 
     // General
     --content-width: 1160px;
@@ -26,8 +27,57 @@
     background-color: var(--black);
 }
 
+.b-blue {
+    background-color: var(--blue);
+}
+
+.b-light-blue-2 {
+    background-color: var(--light-blue-2);
+}
+
+.c-light-blue-2 {
+    color: var(--light-blue-2);
+}
+
+.c-white {
+    color: var(--white);
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-30 {
+    width: 33.33%;
+}
+
+a.remove-default {
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+        cursor: default;
+    }
+}
+
+img {
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
 * {
     box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
 }
 
 #app {

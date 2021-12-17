@@ -8,7 +8,7 @@
 
 <script>
 
-import MulesoftGrey from '../Icons/MulesoftGrey.vue'
+import MulesoftGrey from '@/components/Icons/MulesoftGrey.vue'
 
 export default {
   name: 'Footer',
