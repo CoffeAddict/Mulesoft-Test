@@ -1,24 +1,30 @@
 <template>
-    <div class="d-flex footer-container">
+    <div class="d-flex footer-container b-black">
       <div class="d-flex container">
-        <div class="d-flex footer-sign">
-          <div>
-            <b>Andres Rodriguez</b>
-          </div>
-        </div>
+        <MulesoftGrey/>
       </div>
     </div>
 </template>
 
 <script>
+
+import MulesoftGrey from '../Icons/MulesoftGrey.vue'
+
 export default {
   name: 'Footer',
-  data () {}
+  components: {
+    MulesoftGrey
+  }
 }
 </script>
 
 <style scoped lang="scss">
 .footer-container {
   min-height: var(--footer-height);
+  align-items: center;
+
+  .container {
+    height: min-content;
+  }
 }
 </style>

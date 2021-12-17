@@ -22,6 +22,10 @@
     --mobile-breakpoint: 360px;
 }
 
+.b-black {
+    background-color: var(--black);
+}
+
 * {
     box-sizing: border-box;
 }
@@ -30,6 +34,7 @@
     font-family: 'Open Sans';
     font-weight: 300;
     font-size: 16px;
+    color: var(--black);
 }
 
 .container {
