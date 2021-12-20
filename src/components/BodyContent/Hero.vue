@@ -1,14 +1,14 @@
 <template>
   <div class="d-flex b-blue c-white w-100">
     <div class="container d-flex">
-      <div class="text-side w-50">
+      <div class="text-side">
         <span class="over-text">overview</span>
         <h1>Integrate faster and <span class="c-light-blue-2">unlock your future</span></h1>
         <p>Create seamless digital experiences, products, and services – faster – with the #1 unified platform for integration, API management, and automation.</p>
         <a href="#" class="btn remove-default b-light-blue-2">See how</a>
       </div>
       <HeroBackground class="background-pattern"/>
-      <div class="image-side d-flex w-50">
+      <div class="image-side d-flex">
         <img src="@/assets/img/banner-image.png" alt="Women using a laptop while starring at his floating robot assistant" >
       </div>
     </div>
@@ -23,17 +23,19 @@ export default {
   name: 'Hero',
   components: {
     HeroBackground
-  },
-  data () {
-    return {
-    }
-  },
-  methods: {
   }
 }
 </script>
 
 <style scoped lang="scss">
+.container {
+  position: relative;
+}
+
+.text-side, .image-side {
+  width: 50%;
+}
+
 .text-side {
   padding: 6.25em 0 5em 0;
 
@@ -63,7 +65,7 @@ export default {
   }
 
   .btn {
-    padding: 1em 4em;
+    padding: 1em 3.8em;
     font-weight: bold;
 
     &:hover {
@@ -85,6 +87,52 @@ export default {
 
 .background-pattern {
   position: absolute;
-  right: -7%;
+  right: -25%;
+  bottom: 6%;
+}
+
+@media screen and (max-width: 1000px) {
+  .container.d-flex {
+    flex-wrap: wrap;
+  }
+
+  .text-side, .image-side {
+    width: 100%;
+  }
+
+  .text-side {
+    text-align: center;
+  }
+
+  h1, p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .image-side img {
+    position: initial;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3.5em;
+  }
+
+  .background-pattern {
+    right: -15%;
+    bottom: 3%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .image-side img {
+    width: 100%;
+    max-width: 386px;
+    margin-bottom: 5.5em;
+  }
+
+  .background-pattern {
+    right: -100%;
+    bottom: 0;
+    transform: scale(.95);
+  }
 }
 </style>

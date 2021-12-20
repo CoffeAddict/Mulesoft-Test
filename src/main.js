@@ -8,5 +8,5 @@ import '@/assets/scss/styles.scss'
 
 const app = createApp(App)
 app.provide('gsap', gsap)
-app.directive('src', responsiveImage)
+app.directive('background', responsiveImage)
 app.mount('#app')

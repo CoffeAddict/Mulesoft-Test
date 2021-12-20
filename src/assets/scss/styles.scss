@@ -8,7 +8,11 @@
     --magenta: #e50097;
     --light-blue: #00a3e0;
     --light-blue-2: #00a0df;
+    --light-blue-3: #00D4D4;
+    --purple: #5E66F9;
     --blue: #00044C;
+    --grey: #6D7883;
+
 
     // General
     --content-width: 1160px;
@@ -35,12 +39,28 @@
     background-color: var(--light-blue-2);
 }
 
+.b-magenta {
+    background-color: var(--magenta);
+}
+
 .c-light-blue-2 {
     color: var(--light-blue-2);
 }
 
 .c-white {
     color: var(--white);
+}
+
+.c-grey {
+    color: var(--grey);
+}
+
+.border-margenta {
+    border-color: var(--magenta);
+}
+
+.border-light-blue-3 {
+    border-color: var(--light-blue-3);
 }
 
 .w-100 {
